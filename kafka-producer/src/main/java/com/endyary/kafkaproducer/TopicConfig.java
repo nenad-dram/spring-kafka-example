@@ -17,7 +17,7 @@ public class TopicConfig {
     private String bootstrapAddress;
 
     @Value("${kafka.topic}")
-    public static String topicName;
+    public String topicName;
 
     @Bean
     public KafkaAdmin kafkaAdmin() {
